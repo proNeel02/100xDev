@@ -6,7 +6,6 @@
  */
 
 function waitOneSecond() {
-
     return new Promise((resolve,reject) => {setTimeout(() => resolve('promise 1 resolved'),1000)});
 }
 
@@ -35,5 +34,4 @@ function calculateTime() {
        console.log((end-start)/1000);
     });
 }
-
 calculateTime();

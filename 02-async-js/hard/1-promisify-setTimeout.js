@@ -4,7 +4,7 @@
 
 function wait(n) {
    return new Promise((resolve,reject) => {
-    setTimeout(resolve,n);
+    setTimeout(() => resolve("promise resolved"),n);
    })
    
 }
@@ -14,4 +14,4 @@ function wait(n) {
 //     });
 // }
 
-wait(3000).then(data => {console.log(data); console.log("promise resolved")});
+wait(3000).then(data => console.log(data));
